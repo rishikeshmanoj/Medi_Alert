@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "849883753874",
+    "firebase_url": "https://crusades-7e2b0.firebaseio.com",
+    "project_id": "crusades-7e2b0",
+    "storage_bucket": "crusades-7e2b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849883753874:android:4f727f32c841aa1b",
+        "android_client_info": {
+          "package_name": "com.hollow.thesolitaryowl.negotium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849883753874-trfg2q29irus7lrt0ef7e3ususl0boo1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hollow.thesolitaryowl.negotium",
+            "certificate_hash": "ec3877007b8c4f05bc47bd851cdcea8c79b82505"
+          }
+        },
+        {
+          "client_id": "849883753874-hl08b86vpu6nhhlbem9bdn87ajf6m3rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZABej2HyWS1mc1iJ1vDvin4iRRWFd80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849883753874-hl08b86vpu6nhhlbem9bdn87ajf6m3rl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849883753874:android:a9d76cbfcadda0f2",
+        "android_client_info": {
+          "package_name": "com.hollow.thesolitaryowl.nightlament"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849883753874-7vka3ah9oku6topsmfd5tnao7vcgin1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hollow.thesolitaryowl.nightlament",
+            "certificate_hash": "ec3877007b8c4f05bc47bd851cdcea8c79b82505"
+          }
+        },
+        {
+          "client_id": "849883753874-hl08b86vpu6nhhlbem9bdn87ajf6m3rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHZABej2HyWS1mc1iJ1vDvin4iRRWFd80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849883753874-hl08b86vpu6nhhlbem9bdn87ajf6m3rl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
