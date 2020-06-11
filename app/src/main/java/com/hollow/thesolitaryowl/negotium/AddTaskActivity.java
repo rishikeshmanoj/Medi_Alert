@@ -5,10 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
+
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.database.DataSnapshot;
@@ -22,6 +27,8 @@ import com.hollow.thesolitaryowl.negotium.model.Task;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class AddTaskActivity extends AppCompatActivity {
 
@@ -39,6 +46,7 @@ public class AddTaskActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
+
 
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("Task");
@@ -58,17 +66,16 @@ public class AddTaskActivity extends AppCompatActivity {
                 date = edate.getText().toString().trim();
 
                 HashMap<String, String> dataPush = new HashMap<String, String>();
-                dataPush.put("title",title);
-                dataPush.put("description",description);
-                dataPush.put("date",date);
+                dataPush.put("title", title);
+                dataPush.put("description", description);
+                dataPush.put("date", date);
 
                 myRef.push().setValue(dataPush).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull com.google.android.gms.tasks.Task<Void> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Toast.makeText(AddTaskActivity.this, "Task Added!", Toast.LENGTH_SHORT).show();
-                        }
-                        else{
+                        } else {
                             Toast.makeText(AddTaskActivity.this, "Failed!", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -80,5 +87,19 @@ public class AddTaskActivity extends AppCompatActivity {
 
             }
         });
+
+        Spinner staticSpinner = (Spinner) findViewById(R.id.static_spinner);
+
+
+        ArrayAdapter<CharSequence> staticAdapter = ArrayAdapter
+                .createFromResource(this, R.array.time_array,
+                        android.R.layout.simple_spinner_item);
+
+
+        staticAdapter
+                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+
+        staticSpinner.setAdapter(staticAdapter);
     }
-}
+  }
