@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Medicine Name"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp">
+    <EditText
+        android:gravity="top"
+        android:layout_marginTop="30dp"
+        android:id="@+id/description"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Dosage"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Per Every"
+        android:textSize="19sp"
+        android:layout_marginTop="33dp" />
+
+    <Spinner
+        android:id="@+id/static_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="#ffffff"
+        android:background="#ffffff"
+        android:spinnerMode="dropdown" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint="Time"
+        android:textColorHint="#808080"
+        android:textColor="#ffffff"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="300dp">
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myRed"
+        android:text="Enter"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+</LinearLayout>
+
+</RelativeLayout>

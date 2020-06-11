@@ -1,0 +1,10 @@
+<resources>
+    <!--<string name="app_name">Med Diary</string>-->
+    <string name="app_name"></string>
+    <string-array name="time_array">
+        <item>Hour</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+</resources>

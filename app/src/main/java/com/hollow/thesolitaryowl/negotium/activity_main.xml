@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Med-Diary"
+        android:textSize="35dp"
+        android:paddingLeft="36dp"
+        android:layout_marginTop="150dp"
+        android:textColor="#E50914"
+        />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="159dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/stetlogo" />
+
+    <Button
+        android:id="@+id/addtask"
+        android:background="#E50914"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Add Medicines"
+        android:textColor="#000000"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/viewtask"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="#E50914"
+        android:text="View"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+
+</LinearLayout>
